@@ -1,0 +1,41 @@
+/**
+  *
+  * transform: translate(), scale(), rotate(), skew();
+  *
+  * skew - tilting element in 2d space
+  * transform: skew(); - syntax
+  * skew(ax, ay);
+  * skew(ax);
+  * skewX(ax);
+  * skewY(ay);
+  * 
+  * ax - the amount of angle to use to distort the element in horizontal direction
+  * ay - the amount of angle to use to distort the element in vertical direction
+  * ax, ay -> degrees, gradians, radians, turns.
+  * 
+  *
+ */
+
+.wrapper {
+  width: 150px;
+  height: 150px;
+  border: 1px dashed red;
+  margin: 200px auto;
+}
+
+.inner {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+
+  /* skew in x axis */
+  /* transform: skewX(-50deg); */
+  /* transform: skew(30grad); */
+
+  /* skew in y axis */
+  /* transform: skewY(30deg); */
+  /* transform: skew(0, 40deg); */
+
+  /* skew in both axis */
+  transform: skew(5deg, -45deg);
+}

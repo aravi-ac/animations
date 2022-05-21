@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./transform.module.css";
+import styles from "./skew.module.css";
 
-const Transform = () => {
+const Skew = () => {
   return (
     <div>
       <div className={styles.wrapper}>
@@ -11,4 +11,4 @@ const Transform = () => {
   );
 };
 
-export default Transform;
+export default Skew;

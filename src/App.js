@@ -1,10 +1,10 @@
-import './App.css';
-import { Transform } from "./pages/Transform.js"
+import "./App.css";
+import { Transforms } from "./pages/Transform.js";
 
 function App() {
   return (
     <div className="App">
-      <Transform />
+      <Transforms />
     </div>
   );
 }

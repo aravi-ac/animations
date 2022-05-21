@@ -1,0 +1,38 @@
+/* 
+
+  transform: translate(), scale(), rotate(), skew();
+
+  transform: scale(); - syntax
+  - scale(sx, sy);
+  - scale(s);
+  - scaleX(sx);
+  - scaleY(sy);
+  sx - the amount of resize of the element in horizontal direction = number (int, zero, decimals)
+  sy - the amount of resize of the element in vertical direction = number (int, zero, decimals)
+  sx, sy = [0,1] - decresing the size
+  sx, sy > 1 - increasing the size
+  
+ */
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  border: 1px dashed red;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+
+  /* scaling both the directions */
+  /* transform: scale(2, 2); */
+  /* transform: scale(0.5); */
+
+  /* scaling along x axis */
+  /* transform: scaleX(1.2); */
+
+  /* scaling along y axis */
+  transform: scaleY(0.7);
+}
