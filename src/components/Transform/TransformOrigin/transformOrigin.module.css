@@ -1,0 +1,27 @@
+/**
+  *
+  * transform-origin -> changing the transform origin
+  * transform-origin: center center; | 50% 50% - default
+  * transform-origin: Xaxis Yaxis;
+  * 
+  * Xaxis - left, right, top, bottom, center, precentage, length
+  * Yaxis - left, right, top, bottom, center, precentage, length
+  *
+  *
+  */
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed red;
+  margin: 200px auto;
+}
+
+.inner {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+
+  transform: rotate(45deg);
+  transform-origin: center right;
+}

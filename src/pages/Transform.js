@@ -1,9 +1,11 @@
 import React from "react";
-import Rotate from "../components/Rotate";
-import Scale from "../components/Scale";
-import Skew from "../components/Skew";
-import Transform from "../components/Transform";
-import Transformable from "../components/Transformable";
+import Rotate from "../components/Transform/Rotate";
+import Scale from "../components/Transform/Scale";
+import Skew from "../components/Transform/Skew";
+import Transform from "../components/Transform/Transform";
+import Transformable from "../components/Transform/Transformable";
+import TransformOrigin from "../components/Transform/TransformOrigin";
+import MultipleTransform from "../components/Transform/MultipleTransform";
 
 export const Transforms = () => {
   return (
@@ -13,7 +15,9 @@ export const Transforms = () => {
       {/* <Scale /> */}
       {/* <Rotate /> */}
       {/* <Skew /> */}
-      <Transformable />
+      {/* <Transformable /> */}
+      {/* <TransformOrigin /> */}
+      <MultipleTransform />
     </>
   );
 };
