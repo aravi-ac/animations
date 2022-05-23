@@ -1,0 +1,63 @@
+/**
+  *
+  * transition-timing-function: predefined keywords 
+  * 
+  * -> ease
+  * -> ease-in
+  * -> ease-out
+  * -> ease-in-out
+  * -> step-start
+  * -> step-end
+  * 
+  */
+
+.container {
+  width: 800px;
+  background: black;
+  border: 1px solid #fff;
+
+  min-height: 500px;
+  height: fit-content;
+  padding: 2rem;
+}
+/* transition definition */
+.container > div {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #fff;
+  color: red;
+  margin: 1rem 0;
+
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+.container:hover > div {
+  margin-left: 600px;
+}
+
+/* pre defined functions */
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease_in {
+  transition-timing-function: ease-in;
+}
+
+.ease_out {
+  transition-timing-function: ease-out;
+}
+
+.ease_in_out {
+  transition-timing-function: ease-in-out;
+}
+
+.step_start {
+  transition-timing-function: step-start;
+}
+
+.step_end {
+  transition-timing-function: step-end;
+}

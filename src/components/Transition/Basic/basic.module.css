@@ -1,0 +1,23 @@
+/**
+  *
+  * transition-property: property name;
+  * transition-duration: duration;
+  * transition-timing-function: timing function;
+  * transition-property: property name;
+  * 
+  * transition: [property] [duration] [timing function] [delay];
+  * 
+  */
+
+.transition {
+  margin: 0 auto;
+  width: 100px;
+  height: 45px;
+  background-color: black;
+
+  transition: background-color 0.5s;
+}
+
+.transition:hover {
+  background: grey;
+}

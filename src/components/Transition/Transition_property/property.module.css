@@ -1,0 +1,28 @@
+/**
+  *
+  * transition-property: none | all | property name;
+  * 
+  * none -> no property will be transitioned
+  * all -> all transitionable properties will be transitioned
+  * property name -> the transitioned property name
+  * 
+  */
+
+.transition {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+
+  transition-property: all;
+  /* or seperated by comma */
+  transition-property: background-color, width;
+  transition-duration: 0.5s;
+}
+
+.transition:hover {
+  background: grey;
+
+  width: 150px;
+  height: 150px;
+}
