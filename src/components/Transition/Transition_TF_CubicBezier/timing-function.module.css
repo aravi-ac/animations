@@ -1,0 +1,38 @@
+/**
+  *
+  * transition-timing-function: cubic-bezier(x1,y1,x2,y2);
+  * timing function that describes a progression of movement as a cubic-bezier curve.
+  * 
+  * 
+  */
+
+.container {
+  width: 800px;
+  background: black;
+  border: 1px solid #fff;
+
+  min-height: 500px;
+  height: fit-content;
+  padding: 2rem;
+}
+/* transition definition */
+.container > div {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #fff;
+  color: red;
+  margin: 1rem 0;
+
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+.container:hover > div {
+  margin-left: 600px;
+}
+
+/* functions */
+.cubic {
+  transition-timing-function: cubic-bezier(1, -0.09, 0.82, 0.57);
+}

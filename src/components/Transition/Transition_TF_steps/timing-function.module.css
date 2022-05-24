@@ -1,0 +1,50 @@
+/**
+  *
+  * transition-timing-function: steps(n);
+  * transition-timing-function: steps(n, j);
+  * 
+  * n -> number of steps
+  * j -> jump keyword = start || end
+  * 
+  */
+
+.container {
+  width: 800px;
+  background: black;
+  border: 1px solid #fff;
+
+  min-height: 500px;
+  height: fit-content;
+  padding: 2rem;
+}
+/* transition definition */
+.container > div {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #fff;
+  color: red;
+  margin: 1rem 0;
+
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+.container:hover > div {
+  margin-left: 600px;
+}
+
+/* functions */
+.steps {
+  transition-timing-function: steps(10);
+}
+
+/* take a step then wait */
+.steps_start {
+  transition-timing-function: steps(10, start);
+}
+
+/* wait then take a step */
+.steps_end {
+  transition-timing-function: steps(10, end);
+}
