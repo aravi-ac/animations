@@ -21,6 +21,8 @@
   padding: 0.5rem;
 
   box-shadow: 8px 8px 16px -8px rgba(0, 0, 0, 0.8);
+
+  transition: transform 700ms;
 }
 
 .image {
@@ -61,6 +63,14 @@
   transform: rotate(-19deg) translate(-30px, -15px);
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.5);
+} */
+
+.card:nth-of-type(odd):hover {
+  transform: rotate(360deg) scale(1.4);
+}
+
+.card:nth-of-type(even):hover {
+  transform: rotate(10deg) translate(50px);
 }

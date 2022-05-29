@@ -1,0 +1,30 @@
+/**
+  *
+  * transition: property-name duration timing-function delay;
+  * 
+  */
+
+.container {
+  width: 80%;
+  background: #f2f2f2;
+  border: 1px solid #000;
+
+  height: fit-content;
+  padding: 2rem;
+}
+
+.transition {
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+
+  display: inline-block;
+  text-align: center;
+
+  transition: transform 1.5s cubic-bezier(1, 0.09, 0.51, 0.9) 0.5s;
+}
+
+.container:hover .transition {
+  transform: translate(600px);
+}
